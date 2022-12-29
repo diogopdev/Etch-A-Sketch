@@ -7,6 +7,25 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+button {
+	border: none;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	background-color: grey;
+	width: 90px;
+	height: 40px;
+	box-shadow: 2px 2px 2px grey;
+	border-radius: 5px;
+	border: 1px solid rgb(89, 89, 89);
+	cursor: pointer;
+}
+
+button:hover {
+	box-shadow: 1px 1px 10px rgb(26, 26, 25);
+}
+
+
 #header {
 	font-size: 4em;
 	font-weight: bold;
@@ -29,10 +48,11 @@
 .settings {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content:space-around;
 	align-items: center;
 	border: 1px solid rgb(0, 0, 0);
 	border-radius: 10px;
+	box-shadow: 2px 2px 2px grey;
 }
 
 .box {
@@ -42,6 +62,7 @@
 	border: 1px solid rgb(0, 0, 0);
 	padding: 5%;
 	border-radius: 10px;
+	box-shadow: 2px 2px 2px grey;
 }
 
 #grid {
@@ -49,6 +70,7 @@
 	grid-template-columns: repeat(var(--grid-cols), 1fr);
 	grid-template-rows: repeat(var(--grid-rows), 1fr);	
 	border: 1px solid black;
+	border-radius: 2px;
 	height: 450px;
 	width: 450px;
 }
